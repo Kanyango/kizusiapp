@@ -2,14 +2,16 @@
   "name": "kizusiapp",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "app.js",
+  //"main": "node app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    //"start": "ng serve",
+    "start": "node app.js",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
             "node": "9.3.0",
