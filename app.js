@@ -4,11 +4,13 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'src')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src/index.html'))
-});
+app.use(express.static(__dirname + '/src/'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(express.static(path.join(__dirname, 'src')));
+//app.get('*', (req, res) => {
+//  res.sendFile(path.join(__dirname, '/src/index.html'))
+//});
 
 const port = process.env.PORT || '8800';
 app.set('port', port);
