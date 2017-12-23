@@ -1,11 +1,9 @@
 {
   "name": "kizusiapp",
   "version": "0.0.0",
-  "license": "MIT",
-  //"main": "node app.js",
+  "license": "MIT"
   "scripts": {
     "ng": "ng",
-    //"start": "ng serve",
     "start": "node app.js",
     "build": "ng build --prod",
     "test": "ng test",
