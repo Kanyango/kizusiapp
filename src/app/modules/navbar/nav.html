@@ -1,0 +1,48 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo darken-2 fixed-top">
+
+    <!-- Navbar brand -->
+    <logo>
+        <a class="navbar-brand" href="#">
+            <img src="/../../../assets/logo.png" height="80">
+        </a>
+    </logo>
+
+    <!-- Collapsible content -->
+    <links>
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto" style="color: #000">
+            <li class="nav-item active">
+            <a class="nav-link waves-light" mdbRippleRadius
+            [routerLink]="['/home']"
+                >Home<span class="sr-only">(current)
+                </span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius [routerLink]="['/about']">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius [routerLink]="['/services']">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius [routerLink]="['/cars']">Cars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius [routerLink]="['/contact']">Contact</a>
+            </li>
+            <!-- Dropdown -->
+        </ul>
+        <!-- Links -->
+
+        <!-- Search form -->
+
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+<br />
+<br />
+<br />
+<br />
+<router-outlet></router-outlet>
