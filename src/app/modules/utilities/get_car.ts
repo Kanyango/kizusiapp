@@ -14,7 +14,7 @@ import 'rxjs/add/operator/toPromise';
 export class GetCarComponent {
 
   public cars: Array<any> = [];
-  public carsUrl = 'https://kizusiapp.herokuapp.com/car';
+  public carsUrl = 'https://kizusi.herokuapp.com/car';
 
   constructor(private http: Http)
     {
