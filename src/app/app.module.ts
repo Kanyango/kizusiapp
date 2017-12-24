@@ -29,6 +29,7 @@ import { DriversComponent } from './modules/hustles/drivers';
 import { VideoComponent } from './modules/hustles/video';
 import { EventComponent } from './modules/hustles/event';
 import { ConfirmationComponent } from './modules/cars/confirmation';
+import { RentYourCarComponent } from './modules/rent_car/rent_car';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ConfirmationComponent } from './modules/cars/confirmation';
     DriversComponent,
     VideoComponent,
     EventComponent,
-    ConfirmationComponent
+    ConfirmationComponent,
+    RentYourCarComponent
   ],
   imports: [
     BrowserModule,
