@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponentExample } from './modules/navbar/nav';
 import { RouterModule }   from '@angular/router';
 import { HttpModule }    from '@angular/http';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule }   from './app-routing.module';
@@ -30,6 +30,12 @@ import { VideoComponent } from './modules/hustles/video';
 import { EventComponent } from './modules/hustles/event';
 import { ConfirmationComponent } from './modules/cars/confirmation';
 import { RentYourCarComponent } from './modules/rent_car/rent_car';
+import { PaymentsComponent } from './modules/payments/payments';
+import { MpesaComponent } from './modules/mpesa/mpesa';
+import { PaypalComponent } from './modules/paypal/paypal';
+import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
+//import { PaypalComponent } from './modules/paypal/paypal';
+
 
 @NgModule({
   declarations: [
@@ -53,7 +59,11 @@ import { RentYourCarComponent } from './modules/rent_car/rent_car';
     VideoComponent,
     EventComponent,
     ConfirmationComponent,
-    RentYourCarComponent
+    RentYourCarComponent,
+    PaymentsComponent,
+    MpesaComponent,
+    PaypalComponent,
+    PaypalBtnComponent
   ],
   imports: [
     BrowserModule,
