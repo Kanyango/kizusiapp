@@ -82,6 +82,7 @@ export class CarDetailsComponent implements OnInit
         let myDate = new Date(ngbDate.year, ngbDate.month-1, ngbDate.day);
         let myDate2 = new Date(ngbDate2.year, ngbDate.month-1, ngbDate.day);
         let formValues = this.rentalForm.value;
+        formValues['car'] = this.car._id;
         formValues['end'] = myDate;
         formValues['start_date'] = myDate2;
 
