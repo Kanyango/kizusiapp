@@ -8,10 +8,14 @@ import { CarsComponent } from './modules/cars/cars';
 import { ContactComponent } from './modules/contact/contact';
 import { CarDetailsComponent } from './modules/cars/car_details';
 import { ConfirmationComponent } from './modules/cars/confirmation';
+import { PaymentsComponent } from './modules/payments/payments';
+import { MpesaComponent } from './modules/mpesa/mpesa';
+import { PaypalComponent } from './modules/paypal/paypal';
 import { RentYourCarComponent } from './modules/rent_car/rent_car';
+import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
 
 const routes: Routes = [
-        { path: '', redirectTo: '/home', pathMatch: 'full'},
+        { path: '', redirectTo: 'home', pathMatch: 'full'},
         { path: 'home', component: HomeComponent},
         { path: 'about', component: AboutComponent},
         { path: 'services', component: ServicesComponent},
@@ -19,7 +23,11 @@ const routes: Routes = [
         { path: 'contact', component: ContactComponent},
         { path: 'car_detail/:id', component: CarDetailsComponent},
         { path: 'thankyou', component: ConfirmationComponent},
-        { path: 'rent_car', component: RentYourCarComponent}
+        { path: 'rent_car', component: RentYourCarComponent},
+        { path: 'payments/:id', component: PaymentsComponent},
+        { path: 'mpesa/:id', component: MpesaComponent},
+        { path: 'paypal/:id', component: PaypalComponent},
+        { path: 'confirmation', component: PaypalBtnComponent}
 ];
 
 @NgModule({
