@@ -89,7 +89,7 @@ export class CarDetailsComponent implements OnInit
             .toPromise()
             .then(res => {
                         console.log(res.json());
-                        this.router.navigate(['../thankyou']);
+                        this.router.navigate(['../payments/', this.car._id]);
 
              })
             .catch(this.handleError)
