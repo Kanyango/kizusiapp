@@ -7,8 +7,13 @@
         <div class="overlay">
             <div style="padding-left: 80px; letter-spacing: 2px; padding-top: 50px; color: #000;">
                 <p style="font-size: 28px;">{{ car.model }}</p>
+                <div *ngIf="car.status != 'reserved'">
                 <a [routerLink]="['../car_detail', car._id]"><p style="text-decoration: underline; font-size: 20px;">CONTINUE</p></a>
-            </div>
+              </div>
+              <div *ngIf="car.status == 'reserved'">
+                <p><strong> OOOps! Car unavailable try again later or choose another ride</strong>  </p>
+              </div>
+              </div>
         </div>
       </div>
     </div>
