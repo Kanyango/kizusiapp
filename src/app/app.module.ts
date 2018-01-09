@@ -7,7 +7,12 @@ import { RouterModule }   from '@angular/router';
 import { HttpModule }    from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {
+    FormsModule,
+    FormGroup,
+    FormControl
+} from '@angular/forms';
 import { AppRoutingModule }   from './app-routing.module';
 import { HomeComponent }   from './modules/home/home';
 import { FooterComponent }   from './modules/footer/footer';
@@ -73,6 +78,8 @@ import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
       apiKey: 'AIzaSyCsuGIJdVor_CBVRJ7Qffm7iEFJecVAHHk'
     }),
     NgbModule.forRoot(),
+    FormsModule,
+    Ng2SearchPipeModule,
     AppRoutingModule,
     ReactiveFormsModule,
     NgxCarouselModule
