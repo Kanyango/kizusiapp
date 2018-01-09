@@ -8,13 +8,13 @@
         <div class="form-group">
             <input type="text" id="model" style="font-size: 36px;"
             placeholder="enter your location"
-            class="form-control input-lg" mdbActive [(ngModel)]="model" name="model">
+            class="form-control input-lg" mdbActive [(ngModel)]="location" name="location">
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4 col-sm-6" *ngFor="let car of cars">
+    <div class="col-md-4 col-sm-6" *ngFor="let car of cars | filter: location">
       <div class="card" id="cars">
         <img class="img-fluid" src="{{car.photo}}" class="img-fluid" alt="Card image cap"
         style="width: 100%; height: 300px;">
