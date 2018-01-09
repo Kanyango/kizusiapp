@@ -1,4 +1,18 @@
 <div class="container-full">
+    <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8 card">
+      <div class="card-body text-center">
+        <h1>Find cars near you</h1>
+        <div class="form-group">
+            <input type="text" id="model" style="font-size: 36px;"
+            placeholder="enter your location"
+            class="form-control input-lg" mdbActive [(ngModel)]="model" name="model">
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-4 col-sm-6" *ngFor="let car of cars">
       <div class="card" id="cars">
