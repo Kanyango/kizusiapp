@@ -14,6 +14,7 @@ import { PaypalComponent } from './modules/paypal/paypal';
 import { RentYourCarComponent } from './modules/rent_car/rent_car';
 import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
 import { SignUpComponent } from './modules/signup/signup';
+import { PlanComponent } from './modules/plan/plan';
 
 const routes: Routes = [
         { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -29,7 +30,8 @@ const routes: Routes = [
         { path: 'mpesa/:id', component: MpesaComponent},
         { path: 'paypal/:id', component: PaypalComponent},
         { path: 'confirmation', component: PaypalBtnComponent},
-        { path: 'signup', component: SignUpComponent}
+        { path: 'signup', component: SignUpComponent},
+        { path: 'plan', component: PlanComponent}
 ];
 
 @NgModule({
