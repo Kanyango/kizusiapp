@@ -1,1 +1,59 @@
 
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <h2>Event Name</h2>
+
+  </div>
+  <hr>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">
+          Items List
+        </h3>
+        <hr>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+          </ul>
+
+
+        <form [formGroup]="planForm" novalidate (ngSubmit)="onSubmit()" name="planForm">
+          <div style="background: #E0E0E0; padding: 20px;">
+            <input mdbActive type="text" id="plan_item" name="plan_item" class="form-control"
+            formControlName="plan_item">
+            <button type="submit" [disabled]="!planForm.valid"
+            class="btn btn-primary waves-light" mdbRippleRadius>Add</button>
+          </div>
+        </form>
+      </div>
+
+      </div>
+    </div>
+    <div class="col-md-6 card">
+      <div class="card-body">
+        <h3 class="card-title">To do List</h3>
+        <hr>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let todo of todos">{{ todo }}</li>
+          </ul>
+
+
+        <form [formGroup]="toDoForm" novalidate (ngSubmit)="ontodo()" name="toDoForm">
+          <div style="background: #E0E0E0; padding: 20px;">
+            <input mdbActive type="text" id="todo_item" name="todo_item" class="form-control"
+            formControlName="todo_item">
+            <button type="submit" [disabled]="!toDoForm.valid"
+            class="btn btn-primary waves-light" mdbRippleRadius>Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
