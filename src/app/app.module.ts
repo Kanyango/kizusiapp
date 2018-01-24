@@ -39,6 +39,7 @@ import { PaymentsComponent } from './modules/payments/payments';
 import { MpesaComponent } from './modules/mpesa/mpesa';
 import { PaypalComponent } from './modules/paypal/paypal';
 import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
+import { SignUpComponent } from './modules/signup/signup';
 //import { PaypalComponent } from './modules/paypal/paypal';
 
 
@@ -68,7 +69,8 @@ import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
     PaymentsComponent,
     MpesaComponent,
     PaypalComponent,
-    PaypalBtnComponent
+    PaypalBtnComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
