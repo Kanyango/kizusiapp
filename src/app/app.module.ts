@@ -41,7 +41,7 @@ import { PaypalComponent } from './modules/paypal/paypal';
 import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
 import { SignUpComponent } from './modules/signup/signup';
 //import { PaypalComponent } from './modules/paypal/paypal';
-
+import { PlanComponent } from './modules/plan/plan';
 
 @NgModule({
   declarations: [
@@ -70,7 +70,8 @@ import { SignUpComponent } from './modules/signup/signup';
     MpesaComponent,
     PaypalComponent,
     PaypalBtnComponent,
-    SignUpComponent
+    SignUpComponent,
+    PlanComponent
   ],
   imports: [
     BrowserModule,
