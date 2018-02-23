@@ -10,7 +10,7 @@ import { Headers, Http } from '@angular/http';
 
 export class SignUpComponent 
 {
-    public fbUrl = 'https://kizusi.herokuapp.com/oauth/facebook/';
+    public fbUrl = 'https://kizusi.herokuapp.com/auth/facebook/';
     private headers = new Headers({'Content-Type': 'application/json'});
 
     constructor(private http: Http,
