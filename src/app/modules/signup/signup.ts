@@ -1,7 +1,7 @@
 
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Headers, Http } from '@angular/htt
+import { Headers, Http } from '@angular/http';
 
 @Component({
     selector: 'sign-up-component',
