@@ -1,6 +1,6 @@
 
 import { Component, Input } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import { Headers, Http } from '@angular/http';
 
 @Component({
