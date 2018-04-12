@@ -15,7 +15,7 @@ export class GetCarComponent {
   
   location: any;
   public cars: Array<any> = [];
-  public carsUrl = 'https://kizusi.herokuapp.com/car';
+  public carsUrl = 'https://kizusiadmin.herokuapp.com/car';
 
   constructor(private http: Http)
     {
