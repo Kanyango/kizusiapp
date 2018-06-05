@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class HotelBookingComponent {
-    
+    firstDayOfWeek: number = 0;
     mode: string = 'date';
     start_date: string = '';
     end_date: string = '';
