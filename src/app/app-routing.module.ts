@@ -16,6 +16,10 @@ import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
 import { SignUpComponent } from './modules/signup/signup';
 import { PlanComponent } from './modules/plan/plan';
 
+import { FlightComponent } from './modules/modules/flight/flight';
+import { HotelBookingComponent } from './modules/modules/hotels/hotel';
+import { CarHireComponent } from './modules/modules/cars/car';
+
 const routes: Routes = [
         { path: '', redirectTo: 'home', pathMatch: 'full'},
         { path: 'home', component: HomeComponent},
