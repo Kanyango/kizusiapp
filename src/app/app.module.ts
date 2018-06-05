@@ -42,6 +42,9 @@ import { PaypalBtnComponent } from './modules/pay_btn/pay_btn';
 import { SignUpComponent } from './modules/signup/signup';
 //import { PaypalComponent } from './modules/paypal/paypal';
 import { PlanComponent } from './modules/plan/plan';
+import { FlightComponent } from './modules/modules/flight/flight';
+import { HotelBookingComponent } from './modules/modules/hotels/hotel';
+import { CarHireComponent } from './modules/modules/cars/car';
 
 @NgModule({
   declarations: [
@@ -71,7 +74,10 @@ import { PlanComponent } from './modules/plan/plan';
     PaypalComponent,
     PaypalBtnComponent,
     SignUpComponent,
-    PlanComponent
+    PlanComponent,
+    FlightComponent,
+    HotelBookingComponent,
+    CarHireComponent
   ],
   imports: [
     BrowserModule,
