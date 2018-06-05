@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class FlightComponent {
-
+    
+    another: any = '';
+    firstDayOfWeek: number = 0;
     mode: string = 'date';
     departure: string;
     selectedOption = '';
