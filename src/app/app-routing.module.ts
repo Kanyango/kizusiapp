@@ -31,7 +31,14 @@ const routes: Routes = [
         { path: 'paypal/:id', component: PaypalComponent},
         { path: 'confirmation', component: PaypalBtnComponent},
         { path: 'signup', component: SignUpComponent},
-        { path: 'plan', component: PlanComponent}
+        //{ path: 'plan', component: PlanComponent},
+        { path: 'plan', component: PlanComponent, 
+          children: [
+                     { path: 'flight', component: FlightComponent },
+                     { path: 'hotel', component: HotelBookingComponent },
+                     { path: 'cars', component: CarHireComponent }
+                    ]
+        }
 ];
 
 @NgModule({
