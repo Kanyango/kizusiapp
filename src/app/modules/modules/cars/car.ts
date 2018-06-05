@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class CarHireComponent {
-
+  
+    firstDayOfWeek: number = 0;
     mode: string = 'date';
-    start_data = '';
+    start_date = '';
     end_date = '';
     departure: string;
     selectedOption = '';
